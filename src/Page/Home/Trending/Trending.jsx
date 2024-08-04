@@ -1,0 +1,45 @@
+import React from 'react';
+
+const Trending = () => {
+    return (
+<div className=' pb-14 '>
+<h3 className="text-semibold text-center
+             text-orange-600 uppercase text-lg">Package</h3>
+<h1 className='text-4xl text-center font-bold '>Our Trending Tour</h1>
+<hr className='w-1/2 mx-auto  my-8'/>
+<div className=''>
+<div className='flex justify-center'>
+            <div className="rounded-full w-[112px] h-[112px] md:w-72 md:h-72 lg:w-96 lg:h-96 xl:w-60 xl:h-60 ">
+                                    <img
+                                        src="https://i.postimg.cc/J43pcPC1/saint-martin.jpg"
+                                        alt="Sajek"
+                                        className="object-cover w-full h-full transition-transform  transform hover:scale-105 rounded-full "
+                                        style={{ border: '4px solid blue' }}
+                                    />
+<p className="text-center mt-2 text-xl font-bold ">Saint Martin</p>
+  </div>
+  <div className="rounded-full w-[112px] h-[112px] md:w-72 md:h-72 lg:w-96 lg:h-96 xl:w-60 xl:h-60 mx-16 ">
+                                    <img
+                                        src="https://i.postimg.cc/XvqxWWGJ/Sajek.jpg"
+                                        alt="Sajek"
+                                        className="object-cover w-full h-full transition-transform  transform hover:scale-105 rounded-full"
+                                        style={{ border: '4px solid blue' }}
+                                    />
+<p className="text-center mt-2 text-xl font-bold ">Sajek</p>
+ </div>
+            <div className="rounded-full w-[112px] h-[112px] md:w-72 md:h-72 lg:w-96 lg:h-96 xl:w-60 xl:h-60  relative">
+                                    <img
+                                        src="https://i.postimg.cc/kGQvsXZj/Jaflong.jpg"
+                                        alt="Sajek"
+                                        className="object-cover w-full h-full transition-transform  transform hover:scale-105 rounded-full"
+                                        style={{ border: '4px solid blue' }}
+                                    />
+<p className="text-center mt-2 text-xl font-bold ">Jaflong</p>
+  </div>
+  </div>
+</div>
+</div>
+    );
+};
+
+export default Trending;

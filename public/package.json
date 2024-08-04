@@ -1,0 +1,93 @@
+[
+    
+    {
+        "id":"1",
+        "name": "Kuakata",
+        "price":10000,
+        "description": "Kuakata is a panoramic sea beach on the southernmost tip of Bangladesh. Located in the Patuakhali district.",
+        "date":"2 days",
+        "img":"https://i.postimg.cc/jdY87B9g/kuakata.jpg"
+    
+    },
+    {
+        "id":"2",
+        "name": "Sajek",
+        "price":8000,
+        "description": "Sajek Valley is known for its natural environment and is surrounded by green mountains, dense forests, and hilly terrain.",
+        "date":"3 days",
+        "img":"https://i.postimg.cc/XvqxWWGJ/Sajek.jpg"
+    
+    
+    },
+    {
+        "id":"3",
+        "name": "Cox's Bazar",
+        "price":12000,
+        "description": "Cox's Bazar is one of the longest sea beaches in the world. It's a sandy beach with an unbroken 155 Km length.",
+        "date":"3 days",
+        "img":"https://i.postimg.cc/J0VQjBTD/Coxs-Bazar.jpg"
+    
+    
+    },
+    {
+        "id":"4",
+        "name": "Sreemangal",
+        "price":7000,
+        "description": "Sreemangal is often referred to as the 'tea capital' of Bangladesh, and is most famous for its tea fields. ",
+        "date":"2 days",
+        "img":"https://i.postimg.cc/GmcqMGbv/sreemangal.jpg"
+    
+    
+    },
+    {
+        "id":"5",
+        "name": "Bandarban",
+        "price":9000,
+        "description": "This is the highest natural lake of Bangladesh. It is 3000fts above sea level & 18km away from Ruma Sadar Upazilla.",
+        "date":"2 days",
+        "img":"https://i.postimg.cc/4dh5K11R/bandarban.jpg"
+    
+    
+    },
+    {
+        "id":"6",
+        "name": "Tanguar Haor",
+        "price":11000,
+        "description": "Tanguar Haor, a massive wetland, is located between Dhormopasha and Tahirpur Upazilas in the Sunamganj district of greater Sylhet. ",
+        "date":"2 days",
+        "img":"https://i.postimg.cc/cJzh4zwc/Tanguar-Haor.jpg"
+    
+    
+    },
+    {
+        "id":"7",
+        "name": "Saint Martin",
+        "price":15000,
+        "description": "St. Martin is one of the most beautiful visiting places of Bangladesh. It has fresh blue water with corals, beautiful sandy beaches.",
+        "date":"3 days",
+        "img":"https://i.postimg.cc/J43pcPC1/saint-martin.jpg"
+    
+    
+    },
+    {
+        "id":"8",
+        "name": "Rangamati",
+        "price":8000,
+        "description": "It is surrounded by Tripura of India at north, Bandarban at south, Mizoram of India at east and Khagrachari & Chittagong at west.",
+        "date":"2 days",
+        "img":"https://i.postimg.cc/sgwKbx2q/rangamati.jpg"
+    
+    
+    },
+    {
+        "id":"9",
+        "name": "Jaflong",
+        "price":5000,
+        "description": "Jaflong (Bengali: জাফলং) is a hill station and tourist destination in the Division of Sylhet, Bangladesh. ",
+        "date":"1 day",
+        "img":"https://i.postimg.cc/kGQvsXZj/Jaflong.jpg"
+    
+    
+    }
+    
+    ]

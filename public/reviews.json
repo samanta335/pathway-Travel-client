@@ -1,0 +1,50 @@
+[
+    
+    {
+        "id":"1",
+        "name": "Ms Yashna",
+        "rating":3,
+        "review": "This was a superb tour... beautifully crafted, taking us through the long history of the island and travelling from the arid East to the green West. The accommodation was wonderful and the food/wine experiences truly memorable. Many thanks for your meticulous attention to our comfort.",
+        "img":"https://robincollettephotography.com/wp-content/uploads/sites/7154/2021/04/sacramento_professional_headshot_tips-1.jpg"
+    
+    },
+    {
+        "id":"2",
+        "name": "Safwan Mridha",
+        "rating":4,
+        "review": "Pathway Travel provided us an unparalleled opportunity to explore Turkey from ancient to modern times. The tremendous beauty of the natural setting combined with the knowledge and expertise of the guide made for an unforgettable adventure!",
+        "img":" https://images.squarespace-cdn.com/content/v1/631ba8eed2196a6795698665/c62f320d-a449-4723-8705-ce38f51049ec/2022-08-10-Trinet-Monticalvo-Caleb-0950.jpg"
+    
+    
+    },
+    {
+        "id":"3",
+        "name": "Ayesha Hauqe",
+        "rating":2.5,
+        "review": "The combination of our beautiful gleaming gulet, a totally professional crew, a talented chef producing exquisite yet simple dishes, our lovely local guide and our scholar tour leader who led us into the magic of the ancient world with charm and humour was a rare privilege.",
+        "date":"3 days",
+        "img":"https://photoheads.co.uk/wp-content/uploads/2019/01/London-Headshot-Looking-Up.jpg"
+    
+    
+    },
+    {
+        "id":"4",
+        "name": "Mr. Azwan",
+        "rating":3,
+        "review": " This was the first time I had travelled with PathwayTravel. The company specialises in expert-led cultural and gulet tours in Europe. Group numbers are small, accommodation comfortable and food excellent.",
+        "date":"2 days",
+        "img":"https://media.istockphoto.com/photos/indoor-photo-of-handsome-european-guy-pictured-isolated-on-grey-to-picture-id1034357476?k=20&m=1034357476&s=612x612&w=0&h=OpiBGaVDU02LI1WVpb02Wza6AAdTGopRpf0Kx6q8V-Q="
+    
+    
+    },
+    {
+        "id":"5",
+        "name": "Rangan",
+        "rating":5,
+        "review": "This was the best vacation of my life (and I haven't been the least bit deprived!). I learned more in these two weeks in Turkey than in any year in college with the best professors, and I absorbed it in a way that will continue to inform my understanding of the world for the rest of my life.",
+        "date":"2 days",
+        "img":"https://shotkit.com/wp-content/uploads/2023/08/14-andrea-piacquadio.jpeg"
+    
+    
+    }]
+    
