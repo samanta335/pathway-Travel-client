@@ -1,10 +1,22 @@
-import React from 'react';
-import { Link } from 'react-router-dom'
+import React, { useContext } from 'react';
+import { Link, NavLink } from 'react-router-dom'
 import logo from '../../assets/Home/Suitcase.png'
+import { AuthContext } from '../Authentication/Providers/AuthProvider';
 const Navbar = () => {
+
+  const { user, logOut } = useContext(AuthContext);
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {})
+      .catch((error) => console.log(error));
+  };
+  <style>
+    
+  </style>
+
     return (
         <div className=''>
-            <div className="navbar md:absolute lg:text-white max-w-screen-xl z-10 ">
+            <div className="navbar md:absolute lg:text-white hover:bg-none max-w-screen-xl z-10 ">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -22,12 +34,12 @@ const Navbar = () => {
         </svg>
       </div>
       <ul
-        className="menu menu-sm text-lg font-bold dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+        className="menu menu-sm text-lg hover:bg-transparent font-bold dropdown-content bg-base-100  mt-3 w-52 p-2 shadow">
         <li>
 <Link>Home</Link>
         </li>
         <li>
-<Link to="/package">Packages</Link>
+<Link to="/package" className=''>Packages</Link>
         </li>
         <li>
 <Link>Contact</Link>
@@ -39,20 +51,40 @@ const Navbar = () => {
      PathwayTravel</a>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal text-lg font-bold px-1 font-semibold">
+    <ul className="menu menu-horizontal  hover:bg-transparent text-lg  px-2 font-semibold">
     <li>
-<Link>Home</Link>
+<a href='/' className='hover:bg-transparent '>Home</a>
         </li>
         <li>
-<Link to="/package">Packages</Link>
+          <a href="/package"className='active:bg-transparent' >Packages</a>
         </li>
         <li>
-<Link>Contact</Link>
+<a href='/contact' className='hover:bg-transparent'>Contact</a>
         </li>
     </ul>
   </div>
-  <div className="navbar-end ">
-    <Link to='/login' className='btn btn-outline lg:text-white  hover:bg-blue-500 px-10 hover:border-none'>Login</Link>
+  <div className="navbar-end lg:text-white">
+    <ul className='menu menu-horizontal text-lg  font-semibold'>
+    {user ? (
+              <>
+                <li>
+                  <a href="/booking" className='pr-52 hover:bg-transparent'>Your Booking</a>
+                </li>
+                <li>
+                  <button
+                    className="btn btn-outline text-white font-semibold hover:bg-blue-500 px-10 hover:border-none"
+                    onClick={handleLogOut}
+                  >
+                    Logout
+                  </button>
+                </li>
+              </>
+            ) : (
+              <li>
+                <Link to='/login' className='btn btn-outline font-semibold text-white  hover:bg-blue-500 px-10 hover:border-none'>Login</Link> 
+              </li>
+            )}
+    </ul>
   </div>
 </div>
         </div>

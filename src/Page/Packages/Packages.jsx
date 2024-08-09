@@ -1,35 +1,38 @@
 import React, { useEffect, useState } from 'react';
 import PackageCard from './PackageCard';
-import location from '../../assets/Home/Cover4.jpg'
+import location from '../../assets/Packages-Cover.jpg'
 const packages = () => {
 const [packages, setpackages]=useState([])
 useEffect (()=>{
-    fetch('package.json')
+    fetch('http://localhost:5000/package')
     .then((res)=>res.json())
     .then((data)=>setpackages(data))
     
 },[])
 
+
+
     return (
 <div>
 <div
-                className="md:h-80 h-20 mt-2 bg-cover "
+                className="md:h-80 h-24 bg-cover "
                 style={{
                     backgroundImage:
                         `url('${location}')`,
                 }}
             >
-                <span className="titles md:text-6xl text-4xl text-white md:absolute md:right-[38%] md:top-36  text-center">
+                <span className="titles md:text-6xl text-4xl font-bold text-white md:absolute md:right-[36%] md:top-36  text-center">
                     Our Packages
                 </span>
 </div>
                 <div className="grid md:grid-cols-3 my-16  gap-10">
 {
     packages.map((card)=>(
-        <PackageCard key={card.id} card={card}></PackageCard>
+        <PackageCard key={card._id} card={card}></PackageCard>
     ))
 }
 </div>
+{/* <button className='btn '>see all</button> */}
     </div>
     );
 };

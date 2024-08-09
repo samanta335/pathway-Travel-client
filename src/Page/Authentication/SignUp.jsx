@@ -6,6 +6,7 @@ import './Animation.css'
 import signUpImg from '../../assets/Sign-Up-Image.jpg'
 import { AuthContext } from './Providers/AuthProvider';
 import Swal from 'sweetalert2';
+import SocialLogin from './SocialLogin';
 const SignUp = () => {
     const {
         register,
@@ -19,31 +20,36 @@ const SignUp = () => {
       const navigate = useNavigate();
 
       const onSubmit = (data) => {
-      //   if (data.password !== data.confirmPassword) {
-      //     setError('confirmPassword', { message: 'Passwords do not match' });
-      //     return;
-      // }
+      
         console.log(data);
         createUser(data.email, data.password).then((result) => {
           const loggedUser = result.user;
           console.log(loggedUser);
-          if (loggedUser) {
-            reset();
-            Swal.fire({
-              position: "top-end",
-              icon: "success",
-              title: "User created successfully.",
-              // showConfirmButton: false,
-              timer: 1500,
+          const saveUser = { name: data.name, email: data.email };
+          fetch("http://localhost:5000/users", {
+            method: "POST",
+            headers: {
+              "content-type": "application/json",
+            },
+            body: JSON.stringify(saveUser),
+          })
+            .then((res) => res.json())
+            .then((data) => {
+              if (data.insertedId) {
+                reset();
+                Swal.fire({
+                  position: "top-end",
+                  icon: "success",
+                  title: "User created successfully.",
+                  showConfirmButton: false,
+                  timer: 1500,
+                });
+                navigate("/");
+              }
             });
-            navigate("/");
-          }
-        });
-       
+        })
+        .catch((error) => console.log(error));
     }
-  
-        
-
     return (
         <div>
           <div className=" hero min-h-screen  "
@@ -150,10 +156,7 @@ const SignUp = () => {
             </p>
             
             <div className="divider">Or</div>
-            <div className=" text-center  ">
-             <button onClick=''className="border p-3 border-red-700 rounded-full text-red-700"> <FaGoogle /> </button>
-           </div>
-
+            <SocialLogin></SocialLogin>
           </div>
         </div>
       </div>

@@ -4,10 +4,11 @@ import { FaEnvelope,  FaEye,  FaEyeSlash, FaGoogle, FaUserLock, } from 'react-ic
 import { AuthContext } from './Providers/AuthProvider';
 import Swal from 'sweetalert2';
 import loginImg from '../../assets/Login-image.png'
+import SocialLogin from './SocialLogin';
 
 const Login = () => {
+  const [loginError, setLoginError] = useState(null);
   const [passwordVisible, setPasswordVisible] = useState(false);
-
   const { signUp } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();  
@@ -22,9 +23,8 @@ const Login = () => {
     signUp(email, password).then((result) => {
       const user = result.user;
       console.log(user);
-
       Swal.fire({
-        title: " Login Successful.",
+        title: `Logged in as ${result.user.email}`,
         showClass: {
           popup: "animate__animated animate__fadeInDown",
         },
@@ -35,7 +35,6 @@ const Login = () => {
       navigate(from, { replace: true });
     });
   };
-
 
   const togglePasswordVisibility = () => {
     setPasswordVisible(!passwordVisible);
@@ -55,6 +54,7 @@ const Login = () => {
           <div className=" w-full max-w-sm ">
               <h1 className="gradient-animation text-4xl mb-12 bg-gradient-to-r from-indigo-500 from-20% via-sky-300 via-30% to-pink-400 to-90% text-transparent bg-clip-text text-center font-bold"> Welcome to <p>PathwayTravel </p></h1>
             <form onSubmit={handleLogin} >
+              {/* <p>{loginError}</p> */}
               <div className="form-control my-5">
                 <input
                   type="text"
@@ -98,10 +98,7 @@ const Login = () => {
           </p>
 
           <div className="divider">Or</div>
-          <div className=" text-center  ">
-             <button onClick=''className="border p-3 border-red-700 rounded-full text-red-700"> <FaGoogle /> </button>
-           </div>
-
+          <SocialLogin></SocialLogin>
           </div> 
         </div>
       </div>
