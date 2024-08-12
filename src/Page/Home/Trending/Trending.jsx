@@ -1,5 +1,5 @@
 import React from 'react';
-
+import cox from '../../../assets/Home/cox.png'
 const Trending = () => {
     return (
 <div className=' pb-14 '>
@@ -20,17 +20,17 @@ const Trending = () => {
   </div>
   <div className="rounded-full w-[112px] h-[112px] md:w-72 md:h-72 lg:w-96 lg:h-96 xl:w-60 xl:h-60 mx-16 ">
                                     <img
-                                        src="https://i.postimg.cc/XvqxWWGJ/Sajek.jpg"
+                                        src={cox}
                                         alt="Sajek"
                                         className="object-cover w-full h-full transition-transform  transform hover:scale-105 rounded-full"
                                         style={{ border: '4px solid blue' }}
                                     />
-<p className="text-center mt-2 text-xl font-bold ">Sajek</p>
+<p className="text-center mt-2 text-xl font-bold ">Marin Drive</p>
  </div>
             <div className="rounded-full w-[112px] h-[112px] md:w-72 md:h-72 lg:w-96 lg:h-96 xl:w-60 xl:h-60  relative">
                                     <img
-                                        src="https://i.postimg.cc/kGQvsXZj/Jaflong.jpg"
-                                        alt="Sajek"
+                                        src="https://as2.ftcdn.net/v2/jpg/06/99/45/61/1000_F_699456135_myZiVNvI1UaEZ24BByzxmpazcLU22lZ0.jpg"
+                                        alt=""
                                         className="object-cover w-full h-full transition-transform  transform hover:scale-105 rounded-full"
                                         style={{ border: '4px solid blue' }}
                                     />

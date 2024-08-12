@@ -26,7 +26,7 @@ const Featured = () => {
 
             </p>
             
-           <button> <Link to='/package' className='btn  border-none  text-white mt-5 text-lg font-medium  bg-red-500 hover:bg-black'>See Our Packages                         <FaArrowRight />
+           <button> <Link to='/package' className='btn  border-none  text-white mt-5 text-lg font-medium  bg-red-500 hover:bg-red-400'>See Our Packages                         <FaArrowRight />
             </Link></button>
           </div>
         </div>

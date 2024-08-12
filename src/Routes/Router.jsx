@@ -5,9 +5,8 @@ import Packages from "../Page/Packages/Packages";
 import Login from "../Page/Authentication/Login";
 import SignUp from "../Page/Authentication/SignUp";
 import TravelForm from "../Page/TravelForm/TravelForm";
-import PrivateRoute from "./PrivateRoute";
-import Contact from "../Page/Contact";
 import MyBooking from "../Page/MyBokking/MyBooking";
+import About from "../About/About";
 
 const router = createBrowserRouter([{
 path:"/",
@@ -35,8 +34,8 @@ children:[{
 },
 
 {
-    path:"/contact",
-    element:<Contact></Contact>
+    path:"/about",
+    element:<About></About>
 },
 {
     path:"/booking",

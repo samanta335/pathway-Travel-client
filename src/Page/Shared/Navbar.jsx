@@ -36,43 +36,43 @@ const Navbar = () => {
       <ul
         className="menu menu-sm text-lg hover:bg-transparent font-bold dropdown-content bg-base-100  mt-3 w-52 p-2 shadow">
         <li>
-<Link>Home</Link>
+<Link to='/'>Home</Link>
         </li>
         <li>
 <Link to="/package" className=''>Packages</Link>
         </li>
         <li>
-<Link>Contact</Link>
+<Link to='/about'>About</Link>
         </li>
       </ul>
     </div>
     <img className='w-14 px-2 ' src={logo} alt="" />
-    <a className=" text-2xl font-semibold ">
+    <a className=" text-3xl font-semibold ">
      PathwayTravel</a>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal  hover:bg-transparent text-lg  px-2 font-semibold">
+    <ul className="menu menu-horizontal  hover:bg-transparent text-xl font-semibold">
     <li>
 <a href='/' className='hover:bg-transparent '>Home</a>
         </li>
         <li>
-          <a href="/package"className='active:bg-transparent' >Packages</a>
+          <a href="/package"className='active:bg-transparent px-5' >Packages</a>
         </li>
         <li>
-<a href='/contact' className='hover:bg-transparent'>Contact</a>
+<a href='/about' className='hover:bg-transparent '>About Us</a>
         </li>
     </ul>
   </div>
   <div className="navbar-end lg:text-white">
-    <ul className='menu menu-horizontal text-lg  font-semibold'>
+    <ul className='menu menu-horizontal text-xl  font-semibold'>
     {user ? (
               <>
                 <li>
-                  <a href="/booking" className='pr-52 hover:bg-transparent'>Your Booking</a>
+                  <a href="/booking" className='pr-52 text-xl hover:bg-transparent'>Your Booking</a>
                 </li>
                 <li>
                   <button
-                    className="btn btn-outline text-white font-semibold hover:bg-blue-500 px-10 hover:border-none"
+                    className="btn btn-outline text-lg text-white hover:bg-blue-500 px-10 hover:border-none"
                     onClick={handleLogOut}
                   >
                     Logout
@@ -81,7 +81,7 @@ const Navbar = () => {
               </>
             ) : (
               <li>
-                <Link to='/login' className='btn btn-outline font-semibold text-white  hover:bg-blue-500 px-10 hover:border-none'>Login</Link> 
+                <Link to='/login' className='btn text-lg btn-outline text-white  hover:bg-blue-500 px-10 hover:border-none'>Login</Link> 
               </li>
             )}
     </ul>

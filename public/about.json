@@ -1,0 +1,64 @@
+[
+    {
+        "location": "Saint Martin",
+        "title":"Protected Nature Reserves From All Around the World",
+        "description": "St. Martin is one of the most beautiful visiting places of Bangladesh. It has fresh blue water with corals, beautiful sandy beaches.",
+        "date":"On October 27,2024",
+        "img":"https://i.postimg.cc/J43pcPC1/saint-martin.jpg"
+    
+    
+    },
+    
+    {
+        "location": "Sajek",
+        "title":"The Most Amazing Spots in Nature for a Relaxed Vacation",
+        "description": "Sajek Valley is known for its natural environment and is surrounded by green mountains, dense forests, and hilly terrain.",
+        "date":"On July 20,2022",
+        "img":"https://i.postimg.cc/XvqxWWGJ/Sajek.jpg"
+    },
+
+    {        
+        "location": "Sreemangal",
+        "title":"Porto Travel Guide – Plan Your perfect trip and full suitcase",
+        "description": "Sreemangal is often referred to as the 'tea capital' of Bangladesh, and is most famous for its tea fields. ",
+        "date":"On February 9,2021",
+        "img":"https://i.postimg.cc/GmcqMGbv/sreemangal.jpg"
+    
+    
+    },
+    {
+        "location": "Bandarban",
+        "title":"essential skiing tips for beginners & novices",
+        "description": "This is the highest natural lake of Bangladesh. It is 3000fts above sea level & 18km away from Ruma Sadar Upazilla.",
+        "date":"On April 12,2022",
+        "img":"https://i.postimg.cc/4dh5K11R/bandarban.jpg"
+    
+    
+    },
+    {
+        "location": "Tanguar Haor",
+        "title":"Top Seven Places to Enjoy Breakfast by the Riverside",
+        "description": "Tanguar Haor, a massive wetland, is located between Dhormopasha and Tahirpur Upazilas in the Sunamganj district of greater Sylhet. ",
+        "date":"On September 5,2022",
+        "img":"https://i.postimg.cc/cJzh4zwc/Tanguar-Haor.jpg"
+    
+    
+    },
+    {
+        "location": "Saint Martin",
+        "title":"Protected Nature Reserves From All Around the World",
+        "description": "St. Martin is one of the most beautiful visiting places of Bangladesh. It has fresh blue water with corals, beautiful sandy beaches.",
+        "date":"On June 20,2022",
+        "img":"https://i.postimg.cc/J43pcPC1/saint-martin.jpg"
+    
+    },
+    {
+        
+        "location": "Kuakata",
+        "title":"Walvis Bay hiking locations ",
+        "description": "Kuakata is a panoramic sea beach on the southernmost tip of Bangladesh. Located in the Patuakhali district.",
+        "date":"On December 25,2023",
+        "img":"https://i.postimg.cc/jdY87B9g/kuakata.jpg"
+    
+    }
+    ]
