@@ -48,7 +48,6 @@ const PackageCard = ({card}) => {
       :(
         <button onClick={handlePrivate} className="btn text-white btn-sm px-8 bg-red-500 hover:bg-red-400">Confirm</button>
       )}
-      {/* <button onClick={openModal} className="btn text-white btn-sm px-8 bg-red-500 hover:bg-red-400">Confirm</button> */}
     </div>
   </div>
 </div>

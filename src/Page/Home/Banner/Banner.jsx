@@ -49,7 +49,7 @@ const handlePrivate = () => {
       )}
  </div>
 
-<div className='flex gap-5 '>
+<div className='flex gap-5 w-[100%]'>
 <img src={slide3} data-aos="fade-left"data-aos-duration="1000" alt="" className='absolute border-2 border-amber-500 object-cover h-96 w-52 rounded-box top-[30%] left-[77.5%]  hover:'  />
 
 <p className='top-[78%] bg-black bg-opacity-25 text-white text-center text-2xl left-[80%] absolute'>Sreemangal</p>

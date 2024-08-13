@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom'
 import logo from '../../assets/Home/Suitcase.png'
 import { AuthContext } from '../Authentication/Providers/AuthProvider';
+import Darkreader from 'react-darkreader';
 const Navbar = () => {
 
   const { user, logOut } = useContext(AuthContext);
@@ -72,7 +73,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <button
-                    className="btn btn-outline text-lg text-white hover:bg-blue-500 px-10 hover:border-none"
+                    className="btn btn-outline text-lg text-white hover:bg-transparent px-10 hover:border-white"
                     onClick={handleLogOut}
                   >
                     Logout
@@ -81,9 +82,12 @@ const Navbar = () => {
               </>
             ) : (
               <li>
-                <Link to='/login' className='btn text-lg btn-outline text-white  hover:bg-blue-500 px-10 hover:border-none'>Login</Link> 
+                <Link to='/login' className='btn mr-5 text-lg btn-outline text-white  hover:bg-transparent px-8 hover:border-white'>Login</Link> 
               </li>
             )}
+            <div>
+              <Darkreader></Darkreader>
+            </div>
     </ul>
   </div>
 </div>

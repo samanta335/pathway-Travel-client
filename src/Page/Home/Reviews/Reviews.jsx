@@ -20,7 +20,7 @@ useEffect (()=>{
     
 },[])
     return (
-        <div className='mb-20 bg-slate-100 py-12'>
+        <div className='mb-20 lg:bg-slate-100 py-12'>
             <h3 className="text-semibold text-center
              text-orange-600 uppercase ">What Our Client say</h3>
              <hr className='w-2/5 mx-auto  my-2'/>
