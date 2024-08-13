@@ -37,13 +37,13 @@ const handlePrivate = () => {
   }}>
  <div className="hero-content mt-10 text-white text-center">
  <div className="max-w-xl">
-      <p className="bg-black bg-opacity-5 rounded-xl text-4xl  font-bold">
+      <p className="lg:bg-black lg:bg-opacity-5 rounded-xl text-4xl  font-bold">
         Let's Make <p className=' text-5xl '>Your Next Holiday</p> <p className='text-4xl'>Amazing</p>
       </p>
       {user?
       (<button onClick={openModal} className="btn text-base-200 text-lg border-none  px-5 mt-5 bg-green-500 hover:bg-green-400">Book Now <FaArrowRight /></button>)
       :(
-        <button onClick={handlePrivate} className="btn text-base-200 text-lg border-none px-5  mt-5 bg-green-500 hover:bg-green-400">Book Now<FaArrowRight /></button>
+        <button onClick={handlePrivate} className="btn  text-base-200 text-lg border-none px-5  mt-5 bg-green-500 hover:bg-green-400">Book Now<FaArrowRight /></button>
       )}
       </div>
       </div>

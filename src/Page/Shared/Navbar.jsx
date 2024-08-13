@@ -69,11 +69,11 @@ const Navbar = () => {
     {user ? (
               <>
                 <li>
-                  <a href="/booking" className='pr-40 text-xl hover:bg-transparent'>Your Booking</a>
+                  <a href="/booking" className='pr-28 text-xl hover:bg-transparent'>Your Booking</a>
                 </li>
                 <li>
                   <button
-                    className="btn btn-outline text-lg text-white hover:bg-transparent px-10 hover:border-white"
+                    className="btn btn-outline text-lg text-white hover:bg-transparent px-8 mr-5 hover:border-white"
                     onClick={handleLogOut}
                   >
                     Logout
