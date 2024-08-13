@@ -3,9 +3,9 @@ import SlotCounter from 'react-slot-counter';
 
 const Achievment = () => {
     return (
-        <div className='py-16'>
+        <div className='py-16 '>
  <h1 className="text-5xl text-center font-semibold">Our Achievment</h1>
-            <div className='flex my-16 gap-8 text-center'>
+            <div className='flex my-16 gap-8 text-center lg:text-black'>
             <div className="card bg-slate-100 w-80  h-44"data-aos="fade-right"data-aos-duration="1000">
   <div className="card-body font-semibold text-4xl pt-12">
   <SlotCounter value={78} duration={2}/>

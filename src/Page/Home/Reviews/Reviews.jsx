@@ -24,7 +24,7 @@ useEffect (()=>{
             <h3 className="text-semibold text-center
              text-orange-600 uppercase ">What Our Client say</h3>
              <hr className='w-2/5 mx-auto  my-2'/>
-<h1 className='text-4xl text-center font-bold '>Reviews</h1>
+<h1 className='text-4xl text-center font-bold  lg:text-black'>Reviews</h1>
 <hr className='w-2/6 mx-auto  my-5'/>
 <Swiper
         cssMode={true}
@@ -33,7 +33,7 @@ useEffect (()=>{
         mousewheel={true}
         keyboard={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-        className="mySwiper"
+        className="mySwiper lg:text-black"
       >
 
   {reviews.map((review) => (
