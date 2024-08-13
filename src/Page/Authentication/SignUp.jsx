@@ -26,7 +26,7 @@ const SignUp = () => {
           const loggedUser = result.user;
           console.log(loggedUser);
           const saveUser = { name: data.name, email: data.email };
-          fetch("http://localhost:5000/users", {
+          fetch("https://pathway-travel-server.vercel.app/users", {
             method: "POST",
             headers: {
               "content-type": "application/json",

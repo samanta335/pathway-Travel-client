@@ -8,7 +8,7 @@ import { FaInstagram } from 'react-icons/fa';
 const About = () => {
     const [about, setabout]=useState([])
 useEffect (()=>{
-    fetch('http://localhost:5000/about')
+    fetch('https://pathway-travel-server.vercel.app/about')
     .then((res)=>res.json())
     .then((data)=>setabout(data))
     

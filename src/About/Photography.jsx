@@ -7,7 +7,8 @@ AOS.init();
 const Photography = () => {
     return (
 <div className='mt-28 mb-20'>
-             <h1 className="text-5xl py-14 text-center font-semibold">Why Join Us</h1>
+             <h1 className="text-5xl pt-14 pb-7 text-center font-semibold">Why Choose Us</h1>
+             <hr className='pb-12 w-2/4 mx-auto'/>
 <div className=' justify-center flex gap-20 items-center'>
             <img data-aos="fade-down" src={img}alt=""  className='w-2/5'/>
                 <p className='w-2/5 text-lg'  data-aos="fade-up">

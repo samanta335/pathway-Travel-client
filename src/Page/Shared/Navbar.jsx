@@ -47,7 +47,7 @@ const Navbar = () => {
       </ul>
     </div>
     <img className='w-14 px-2 ' src={logo} alt="" />
-    <a className=" text-3xl font-semibold ">
+    <a href='/' className=" text-3xl font-semibold ">
      PathwayTravel</a>
   </div>
   <div className="navbar-center hidden lg:flex">

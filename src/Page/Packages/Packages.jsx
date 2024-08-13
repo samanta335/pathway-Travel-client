@@ -4,7 +4,7 @@ import location from '../../assets/Packages-Cover.jpg'
 const packages = () => {
 const [packages, setpackages]=useState([])
 useEffect (()=>{
-    fetch('http://localhost:5000/package')
+    fetch('https://pathway-travel-server.vercel.app/package')
     .then((res)=>res.json())
     .then((data)=>setpackages(data))
     
