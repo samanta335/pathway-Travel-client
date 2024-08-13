@@ -68,7 +68,7 @@ const Navbar = () => {
     {user ? (
               <>
                 <li>
-                  <a href="/booking" className='pr-52 text-xl hover:bg-transparent'>Your Booking</a>
+                  <a href="/booking" className='pr-40 text-xl hover:bg-transparent'>Your Booking</a>
                 </li>
                 <li>
                   <button

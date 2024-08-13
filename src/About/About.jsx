@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import PopularPost from './PopularPost';
 import Achievment from './Achievment';
 import Photography from './Photography';
-import aboutUs from '../assets/about.jpg'
+import aboutUs from '../assets/about-us.jpg'
+import { FaInstagram } from 'react-icons/fa';
 
 const About = () => {
     const [about, setabout]=useState([])
@@ -32,6 +33,12 @@ useEffect (()=>{
             {about.map((post)=>(
                 <PopularPost key={post._id} post={post}></PopularPost>
             ))}
+             </div>
+             <div className='text-center my-24'>
+                <p className=''>
+                    <FaInstagram className=' mx-auto font-semibold text-3xl text-red-500' />Find us on Instagram
+                    </p>
+                <h1 className="text-4xl text-bold ">@Pathway Travel</h1>
              </div>
         </div>
     );
