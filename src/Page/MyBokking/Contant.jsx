@@ -41,8 +41,8 @@ const Contant = () => {
               <th className='pl-8'>Email</th>
               <th className='pl-6'>Number</th>
               <th>Destination</th>
-              <th>From date</th>
-              <th>To date</th>
+              <th>Check In</th>
+              <th>Check Out</th>
               <th></th>
             </tr>
           </thead>

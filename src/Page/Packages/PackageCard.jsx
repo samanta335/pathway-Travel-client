@@ -28,7 +28,7 @@ const PackageCard = ({card}) => {
 
     return (
         <div className=''>
-       <div className="border rounded relative bg-slate-100 h-96 shadow-xl">
+       <div className="border rounded relative bg-slate-100 shadow-xl">
     <img
       src={img}
       className='w-full h-44 object-cover rounded mb-4'

@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom'
 import logo from '../../assets/Home/Suitcase.png'
 import { AuthContext } from '../Authentication/Providers/AuthProvider';
-import Darkreader from 'react-darkreader';
 const Navbar = () => {
 
   const { user, logOut } = useContext(AuthContext);
@@ -47,7 +46,7 @@ const Navbar = () => {
         </li>
       </ul>
     </div>
-    <img className='w-14 px-2 ' src={logo} alt="" />
+    <img className='w-14 h-14 px-2 ' src={logo} alt="" />
     <a href='/' className=" text-3xl font-semibold ">
      PathwayTravel</a>
   </div>
@@ -69,11 +68,11 @@ const Navbar = () => {
     {user ? (
               <>
                 <li>
-                  <a href="/booking" className='pr-28 text-xl hover:bg-transparent'>Your Booking</a>
+                  <a href="/booking" className='pr-44 pt- text-xl hover:bg-transparent'>Your Booking</a>
                 </li>
                 <li>
                   <button
-                    className="btn btn-outline text-lg text-white hover:bg-transparent px-8 mr-5 hover:border-white"
+                    className="btn btn-outline text-lg text-white hover:bg-transparent px-8  hover:border-white"
                     onClick={handleLogOut}
                   >
                     Logout
@@ -82,12 +81,10 @@ const Navbar = () => {
               </>
             ) : (
               <li>
-                <Link to='/login' className='btn mr-5 text-lg btn-outline text-white  hover:bg-transparent px-8 hover:border-white'>Login</Link> 
+                <Link to='/login' className='btn  text-lg btn-outline text-white  hover:bg-transparent px-8 hover:border-white'>Login</Link> 
               </li>
             )}
-            <div>
-              <Darkreader></Darkreader>
-            </div>
+           
     </ul>
   </div>
 </div>

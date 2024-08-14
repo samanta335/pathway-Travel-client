@@ -76,7 +76,7 @@ const SocialLogin = () => {
             <div className=" text-center  ">
              <button onClick={handleGoogle} className="border p-3 border-red-700 rounded-full text-red-700"> <FaGoogle className='w-5 h-5' /> </button>
            </div>
-           <button onClick={handleFacebook} className=" p-3 rounded-full text-white bg-blue-500"> <FaFacebook className='w-5 h-5'/> </button>
+           {/* <button onClick={handleFacebook} className=" p-3 rounded-full text-white bg-blue-500"> <FaFacebook className='w-5 h-5'/> </button> */}
         </div>
     );
 };

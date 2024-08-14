@@ -4,7 +4,7 @@ import { AuthContext } from '../../Authentication/Providers/AuthProvider';
 import TravelForm from '../../TravelForm/TravelForm';
 import Swal from 'sweetalert2';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { FaArrowRight } from 'react-icons/fa';
+import { FaArrowRight,FaLocationArrow, FaCalendarAlt } from 'react-icons/fa';
 
 const Banner = () => {
 const {user}=useContext(AuthContext)
@@ -35,32 +35,24 @@ const handlePrivate = () => {
   style={{
     backgroundImage: `url(${banner})`,
   }}>
- <div className="hero-content mt-10 text-white text-center">
- <div className="max-w-xl">
-      <p className="lg:bg-black lg:bg-opacity-5 rounded-xl text-4xl  font-bold">
+ <div className="hero-content  text-white text-center">
+ <div className="max-w-xl mb-20">
+      <p className="  text-4xl  font-bold">
         Let's Make <p className=' text-5xl '>Your Next Holiday</p> <p className='text-4xl'>Amazing</p>
       </p>
-      {user?
-      (<button onClick={openModal} className="btn text-base-200 text-lg border-none  px-5 mt-5 bg-green-500 hover:bg-green-400">Book Now <FaArrowRight /></button>)
+      </div>
+      </div>
+<div className='flex bg-[#F3F3F3] bg opacity-80 w text-indigo-600 text-lg text-semibold mt-32 p-2 rounded-full '>
+ <p className='px-5 flex items-center border-r-2 border-indigo-300'><FaLocationArrow className='w-3 h-3 mx-1'/> Location</p>
+ <p className='px-5 flex items-center border-r-2 border-indigo-300'><FaCalendarAlt className='w-3.5 h-3.5 mx-1'/> Check In</p>
+ <p className='px-5 flex items-center'><FaCalendarAlt className='w-3.5 h-3.5 mx-1'/>Check Out</p>
+ {user?
+      (<button onClick={openModal} className="btn btn-sm rounded-full text-white text-lg border-none ml-5 bg-amber-600 hover:bg-amber-600">Book Now <FaArrowRight /></button>)
       :(
-        <button onClick={handlePrivate} className="btn  text-base-200 text-lg border-none px-5  mt-5 bg-green-500 hover:bg-green-400">Book Now<FaArrowRight /></button>
+        <button onClick={handlePrivate} className="btn btn-sm rounded-full text-white text-lg border-none ml-5 bg-blue-600 hover:bg-amber-600">Book Now<FaArrowRight className='w-3.5 h-3.5 '/></button>
       )}
-      </div>
-      </div>
+</div>
   </div>
-
-{/* <div className='flex gap-5 w-[100%]'>
-<img src={slide3} data-aos="fade-left"data-aos-duration="1000" alt="" className='absolute border-2 border-amber-500 object-cover h-96 w-52 rounded-box top-[30%] left-[77.5%]  hover:'  />
-<p className='top-[78%] bg-black bg-opacity-25 text-white text-center text-2xl left-[80%] absolute'>Sreemangal</p>
-<img src={slide2}alt=""data-aos="fade-right"data-aos-duration="1000" className='absolute  border-2 border-amber-500 object-cover h-96 w-52 mr-10 left-[48%] rounded-box top-[30%]'/>
-
-<p className='top-[78%] bg-black rounded-lg bg-opacity-10 text-white text-center text-2xl left-[51%] absolute'>Sajek Valley</p>
-
-
-<img src={slide1} alt=""data-aos="zoom-in"data-aos-duration="1000" className='absolute border-2 border-amber-500 object-cover h-96 w-52 mr-10 left-[63%] rounded-box top-[30%]'/>
-
-<p className='top-[78%] text-white text-center text-2xl bg-black bg-opacity-25 left-[66%] absolute'>Sundarban</p>
-</div> */}
 {isOpen && (<TravelForm></TravelForm>)}
   </div>
     );

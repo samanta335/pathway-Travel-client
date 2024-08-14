@@ -110,7 +110,7 @@ const TravelForm = () => {
         </label>
         <div>
         <label className="label ">
-            <span>From</span>
+            <span>Check In</span>
         </label>
         <input
             className="text-input input input-bordered focus:outline-none"
@@ -121,7 +121,7 @@ const TravelForm = () => {
         </div>
         <div>
         <label className="label ">
-            <span>To</span>
+            <span>Check Out</span>
         </label>
         <input
             className="text-input input input-bordered focus:outline-none"
