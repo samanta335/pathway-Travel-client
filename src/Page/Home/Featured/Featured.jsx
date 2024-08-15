@@ -16,17 +16,16 @@ const Featured = () => {
           <div>
             <img className=' lg:w-4/5' src={featuredImg} alt="" />
           </div>
-          <div className="text-center lg:text-start pt-5 md:w-3/4">
-            <h1 className="text-3xl lg:text-4xl  font-bold">Bandarban, Chittagong</h1>
-            <p className="uppercase text-2xl py-2">Where you can go.</p>
-            <p className='text-xl text-medium w-full lg:w-4/5' >
+          <div className="  pt-5 md:w-3/4">
+            <h1 className="text-3xl text-center lg:text-start lg:text-4xl  font-bold">Bandarban, Chittagong</h1>
+            <p className="uppercase text-center lg:text-start text-2xl py-2">Where you can go.</p>
+            <p className='text-xl text-medium px-5 lg:px-0 lg:w-4/5' >
             Bandarban Hill District is the most remote and least populated district in Bangladesh. The lure of the tallest peaks of Bangladesh <section {...getCollapseProps()}> treks through virgin forests and chance to meet more than 15 tribes of the region up close is growing both among Bangladeshis and tourists from other countries.</section> <button {...getToggleProps()} className='text-neutral-content   font-semibold'>
         {isExpanded ? 'read less' : 'read more...'}
       </button>
-
             </p>
-            
-           <button> <Link to='/package' className='btn  border-none  text-white mt-5 text-lg font-medium  bg-red-500 hover:bg-red-400'>See Our Packages                         <FaArrowRight />
+      
+           <button> <Link to='/package' className='btn mx-5 lg:mx-0 border-none  text-white mt-5 text-lg font-medium  bg-red-500 hover:bg-red-400'>See Our Packages                         <FaArrowRight />
             </Link></button>
           </div>
         </div>

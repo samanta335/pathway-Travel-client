@@ -33,13 +33,13 @@ const Contant = () => {
     return (
         <div>
           <div className="overflow-x-auto  ">
-        <table className="table lg:table-xl">
+        <table className="table table-xl">
           <thead>
             <tr>
               <th></th>
               <th>Name</th>             
-              <th className='pl-8'>Email</th>
-              <th className='pl-6'>Number</th>
+              <th className='lg:pl-8'>Email</th>
+              <th className='lg:pl-6'>Number</th>
               <th>Destination</th>
               <th>Check In</th>
               <th>Check Out</th>
@@ -51,9 +51,9 @@ const Contant = () => {
             <tr key={booked._id}>
               <th>{index +1}</th>
               <td>{booked.name}</td>
-              <td className='pl-4'>{booked.email}</td>
+              <td className='lg:pl-4'>{booked.email}</td>
               <td>{booked.number}</td>
-              <td className='pl-6'>{booked.destination}</td>
+              <td className='lg:pl-6'>{booked.destination}</td>
               <td>{booked.fromDate}</td>
               <td>{booked.toDate}</td>
               <td><button

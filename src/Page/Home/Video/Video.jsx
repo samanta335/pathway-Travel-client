@@ -17,15 +17,15 @@ const ProvideSection = () => {
 
     return (
         <section
-            className="py-24 lg:py-20 bg-cover my-20"
+            className="py-24 lg:py-20 md:bg-cover bg-center my-20"
             style={{ backgroundImage: `url(${img})` }}
         >
-            <div className="mt-20  md:ml-10">
+            <div className="mt-20 ml-2 md:ml-10">
                 <h2 className="titles  text-center md:text-left font-bold text-white mb-8" >
                     <p className='md:text-7xl text-5xl '>Explore</p> 
                 <p className='md:text-6xl text-4xl'>Tanguar Haor</p>
                 </h2>
-                <div className="md:flex  md:mt-0 mt-10 md:gap-3 md:ml-0 ml-5 lg:ml-28">
+                <div className="md:flex  md:mt-0 mt-10 md:gap-3 md:ml-0 ">
                     <div className="flex items-center space-x-4 md:mt-0 mt-5">
                         <div className='flex items-center space-x-4 ' >
                     <button className="bg-orange-600 hover:bg-orange-500 text-gray-50 font-semibold md:px-6 px-10 py-3 rounded-full flex items-center space-x-1 " >

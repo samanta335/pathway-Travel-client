@@ -16,7 +16,7 @@ useEffect (()=>{
     return (
         <div className=''>
             <div
-                className="md:h-80 h-24 bg-cover pt-5 text-center"
+                className="md:h-80 h-24 w-full bg-cover pt-5 text-center"
                 style={{
                     backgroundImage:
                         `url('${aboutUs}')`,
