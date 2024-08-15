@@ -16,7 +16,7 @@ useEffect (()=>{
     return (
         <div className=''>
             <div
-                className="md:h-80 h-24 bg-cover "
+                className="md:h-80 h-24 bg-cover pt-5 text-center"
                 style={{
                     backgroundImage:
                         `url('${aboutUs}')`,
@@ -28,8 +28,8 @@ useEffect (()=>{
 </div>
             <Photography></Photography>
             <Achievment></Achievment>
-            <h1 className="text-5xl text-center font-semibold">Most Popular Post</h1>
-             <div className="grid md:grid-cols-2 my-16 gap-10">
+            <h1 className="text-4xl lg:text-5xl text-center font-semibold">Most Popular Post</h1>
+             <div className="grid md:grid-cols-2 my-10 lg:my-16 gap-10">
             {about.map((post)=>(
                 <PopularPost key={post._id} post={post}></PopularPost>
             ))}

@@ -6,7 +6,7 @@ import medical from '../../../assets/Home/medical.jpg'
 
 const Category = () => {
     return (
-        <div className='my-28 '>
+        <div className='my-20 lg:my-28 '>
             <h3 className="text-semibold text-center
              text-orange-600 uppercase text-lg">Catergory</h3>
             <h1 className='text-3xl text-center font-bold'>We Offer Best Services</h1>

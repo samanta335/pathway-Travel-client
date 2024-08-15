@@ -8,7 +8,7 @@ console.log(post)
   <div className="hero-content border border-base-200 flex-col lg:flex-row">
     <img
       src={img}
-      className="h-52 w-52 object-cover rounded-lg" />
+      className="h-52 lg:w-52 object-cover rounded-lg" />
     <div>
         <div className='flex gap-4'>
             <p className='text-purple-800 text-lg font-semibold'>{location}</p>

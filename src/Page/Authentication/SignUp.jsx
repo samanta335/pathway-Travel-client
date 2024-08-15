@@ -125,7 +125,7 @@ const SignUp = () => {
                   type="password"
                   {...register("confirmPassword", )}
                   name="confirm password"
-                  placeholder="Confirm password*"
+                  placeholder="Confirm password"
                   className="input input-bordered focus:outline-none border-sky-400"
                 />
                 {/* {errors.confirmPassword?.type === "required" && (

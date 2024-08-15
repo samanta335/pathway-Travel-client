@@ -33,7 +33,7 @@ const Contant = () => {
     return (
         <div>
           <div className="overflow-x-auto  ">
-        <table className="table table-xl">
+        <table className="table lg:table-xl">
           <thead>
             <tr>
               <th></th>

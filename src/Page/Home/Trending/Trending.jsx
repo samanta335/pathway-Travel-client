@@ -6,9 +6,9 @@ const Trending = () => {
 <h3 className="text-semibold text-center
              text-orange-600 uppercase text-lg">Package</h3>
 <h1 className='text-4xl text-center font-bold '>Our Trending Tour</h1>
-<hr className='w-1/2 mx-auto  my-8'/>
+<hr className='w-4/5 lg:w-1/2 mx-auto my-8'/>
 <div className=''>
-<div className='flex justify-center'>
+<div className='flex justify-center items-center '>
             <div className="rounded-full w-[112px] h-[112px] md:w-72 md:h-72 lg:w-96 lg:h-96 xl:w-60 xl:h-60 ">
                                     <img
                                         src="https://i.postimg.cc/J43pcPC1/saint-martin.jpg"
@@ -16,16 +16,16 @@ const Trending = () => {
                                         className="object-cover w-full h-full transition-transform  transform hover:scale-105 rounded-full "
                                         style={{ border: '4px solid blue' }}
                                     />
-<p className="text-center mt-2 text-xl font-bold ">Saint Martin</p>
+<p className="text-center mt-2  text-lg lg:text-xl font-bold ">Saint Martin</p>
   </div>
-  <div className="rounded-full w-[112px] h-[112px] md:w-72 md:h-72 lg:w-96 lg:h-96 xl:w-60 xl:h-60 mx-16 ">
+  <div className="rounded-full w-[112px] h-[112px] md:w-72 md:h-72 lg:w-96 lg:h-96 xl:w-60 xl:h-60 mx-4 lg:mx-16 ">
                                     <img
                                         src={cox}
                                         alt="Sajek"
                                         className="object-cover w-full h-full transition-transform  transform hover:scale-105 rounded-full"
                                         style={{ border: '4px solid blue' }}
                                     />
-<p className="text-center mt-2 text-xl font-bold ">Marin Drive</p>
+<p className="text-center mt-2  text-lg lg:text-xl font-bold ">Marin Drive</p>
  </div>
             <div className="rounded-full w-[112px] h-[112px] md:w-72 md:h-72 lg:w-96 lg:h-96 xl:w-60 xl:h-60  relative">
                                     <img
@@ -34,7 +34,7 @@ const Trending = () => {
                                         className="object-cover w-full h-full transition-transform  transform hover:scale-105 rounded-full"
                                         style={{ border: '4px solid blue' }}
                                     />
-<p className="text-center mt-2 text-xl font-bold ">Jaflong</p>
+<p className="text-center mt-2 text-lg lg:text-xl font-bold ">Jaflong</p>
   </div>
   </div>
 </div>

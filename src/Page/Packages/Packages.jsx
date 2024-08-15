@@ -15,17 +15,17 @@ useEffect (()=>{
     return (
 <div>
 <div
-                className="md:h-80 h-24 bg-cover "
+                className="md:h-80 h-24 bg-cover pt-8 text-center"
                 style={{
                     backgroundImage:
                         `url('${location}')`,
                 }}
             >
-                <span className="titles md:text-6xl text-4xl font-bold text-white md:absolute md:right-[36%] md:top-36  text-center">
+                <span className="titles md:text-6xl text-3xl font-bold text-white md:absolute md:right-[36%] md:top-36   text-center">
                     Our Packages
                 </span>
 </div>
-                <div className="grid md:grid-cols-3 my-16  gap-10">
+                <div className="grid md:grid-cols-3 my-10 lg:my-16  gap-10">
 {
     packages.map((card)=>(
         <PackageCard key={card._id} card={card}></PackageCard>

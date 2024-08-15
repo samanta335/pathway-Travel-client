@@ -10,16 +10,16 @@ const Featured = () => {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse()
 
     return (
-        <div className="featured-item bg-fixed text-white pt-20 my-20">
+        <div className="featured-item bg-fixed text-white pt-16 lg:pt-20 my-24 lg:my-20">
        
-        <div className="md:flex justify-center  items-center bg-slate-500 bg-opacity-60 pb-20 pt-12 px-24">
+        <div className="md:flex justify-center gap-10 items-center bg-slate-500 bg-opacity-60 pb-12 lg:pb-20 pt-12 px-5 lg:px-24">
           <div>
-            <img className='w-4/5' src={featuredImg} alt="" />
+            <img className=' lg:w-4/5' src={featuredImg} alt="" />
           </div>
-          <div className="md:w-3/5">
-            <h1 className="text-4xl  font-bold">Bandarban, Chittagong</h1>
-            <p className="uppercase text-xl py-2">Where you can go.</p>
-            <p className='text-lg text-medium w-4/5' >
+          <div className="text-center lg:text-start pt-5 md:w-3/4">
+            <h1 className="text-3xl lg:text-4xl  font-bold">Bandarban, Chittagong</h1>
+            <p className="uppercase text-2xl py-2">Where you can go.</p>
+            <p className='text-xl text-medium w-full lg:w-4/5' >
             Bandarban Hill District is the most remote and least populated district in Bangladesh. The lure of the tallest peaks of Bangladesh <section {...getCollapseProps()}> treks through virgin forests and chance to meet more than 15 tribes of the region up close is growing both among Bangladeshis and tourists from other countries.</section> <button {...getToggleProps()} className='text-neutral-content   font-semibold'>
         {isExpanded ? 'read less' : 'read more...'}
       </button>
